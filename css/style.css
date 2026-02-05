@@ -1,0 +1,85 @@
+/* ===== Grundläggande reset ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Navigation – Flexbox ===== */
+/* Jag använder Flexbox för att placera navigationslänkar horisontellt */
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #d63384;
+  font-weight: bold;
+}
+
+/* ===== Hero-sektion ===== */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* ===== Bildspel ===== */
+.slideshow {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slideshow img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ===== Galleri – CSS Grid ===== */
+/* Jag använder CSS Grid för att skapa ett responsivt bildgalleri */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 40px 20px;
+}
+
+/* Anpassning för mindre skärmar */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery article {
+  text-align: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ===== Optimerade bilder ===== */
+/* Gör sidan responsiv + korrekt bildskalning */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
